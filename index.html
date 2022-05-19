@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- stops ios from altering phone numbers please remember to use <a href="tel:1-800...">1-800...</a> -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/img.triggermail.io/static/custom-fonts.css">
+    <link rel="stylesheet" href="https://bluecore.com/admin/templates/fonts/columbia_us.css">
+
+    <!-- desktop styles -->
+
+    <!-- end desktop styles -->
+
+    <!-- responsive styles -->
+    <style type="text/css" media="only screen and (max-width: 600px)">
+      @media screen and (max-width: 600px) {
+        div,
+        p,
+        a,
+        li,
+        span,
+        td {
+          -webkit-text-size-adjust: none !important;
+        }
+        /* ========== utilities ========== */
+        /* makes images responsive inside columns on mobile devices */
+        .flex-image {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .flex-button {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+        .flex-button a {
+          display: block !important;
+          font-size: 18px !important;
+        }
+        .mobile-hide {
+          display: none !important;
+        }
+        .desktop-hide {
+          display: block !important;
+          max-height: none !important;
+          overflow: visible !important;
+          float: none !important;
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+        .display-table {
+          display: table !important;
+        }
+        table.desktop-hide {
+          display: table !important;
+        }
+        tr.desktop-hide {
+          display: table-row !important;
+        }
+        .desktop-hide td,
+        td.desktop-hide {
+          display: table-cell !important;
+        }
+        .desktop-hide img,
+        img.desktop-hide {
+          max-height: none !important;
+          width: auto !important;
+        }
+        .desktop-hide .flex-image {
+          width: 100% !important;
+        }
+        /* ========== end utilities ========== */
+        /* ========== scaffolding ========== */
+        #content-table,
+        .row,
+        .fluid-row,
+        .md-fluid-row,
+        .row-spacer,
+        #navigation,
+        .row .col-1,
+        .row .col-2,
+        .row .col-3,
+        .row .col-4,
+        .row .col-5,
+        .row .col-6,
+        .row .col-7,
+        .row .col-8,
+        .row .col-9,
+        .row .col-10,
+        .row .col-11,
+        .col-12 {
+          width: 100% !important;
+        }
+        .fluid-row .col-1,
+        .md-fluid-row .col-1 {
+          width: 8.25% !important;
+        }
+        .fluid-row .col-2,
+        .md-fluid-row .col-2 {
+          width: 16.5% !important;
+        }
+        .fluid-row .col-3,
+        .md-fluid-row .col-3 {
+          width: 25% !important;
+        }
+        .fluid-row .col-4,
+        .md-fluid-row .col-4 {
+          width: 33% !important;
+        }
+        .fluid-row .col-5,
+        .md-fluid-row .col-5 {
+          width: 41.25% !important;
+        }
+        .fluid-row .col-6,
+        .md-fluid-row .col-6 {
+          width: 50% !important;
+        }
+        .fluid-row .col-7,
+        .md-fluid-row .col-7 {
+          width: 57.75% !important;
+        }
+        .fluid-row .col-8,
+        .md-fluid-row .col-8 {
+          width: 66% !important;
+        }
+        .fluid-row .col-9,
+        .md-fluid-row .col-8 {
+          width: 74.25% !important;
+        }
+        .fluid-row .col-10,
+        .md-fluid-row .col-10 {
+          width: 82.5% !important;
+        }
+        .fluid-row .col-11,
+        .md-fluid-row .col-11 {
+          width: 90.75% !important;
+        }
+        /* ========== end scaffolding ========== */
+        /* ========== custom styles ============= */
+        #vte-hero-product .hero-product-container {
+          padding-top: 0 !important;
+        }
+        #vte-nav-widget-image-container {
+          padding-top: 0 !important;
+          padding-right: 0 !important;
+          padding-bottom: 0 !important;
+          padding-left: 0 !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+          float: none !important;
+        }
+        .mobile-center img {
+          text-align: center !important;
+          margin: 0 auto !important;
+        }
+        #widget_ee424a7a0225eb2cc2bb5911a0caa22e .block-content td {
+          font-size: 10px !important;
+          line-height: 14px !important;
+          letter-spacing: 0em !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        #widget_90886dc8dab7f3c8d8c9707ecbdd999f td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_a60cb1aa3fd4652ae5c89983553004d7 .block-content .image-widget-content {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_a60cb1aa3fd4652ae5c89983553004d7 .block-content .image-widget-content .mobile-width {
+          width: 320px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .list-layout-attributes-container {
+          padding-top: 0px !important;
+          padding-left: 0px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .stacked-list-layout-attributes-container {
+          padding-top: 0px !important;
+          padding-left: 0px !important;
+          width: 320px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .list-layout-container {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .list-layout-attributes-container .vte-product-attribute {
+          padding-left: 10px !important;
+          height: 100% !important;
+          padding-bottom: 0 !important;
+          padding-top: 0 !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .stacked-list-layout-attributes-container .vte-product-attribute {
+          height: 100% !important;
+          padding-bottom: 0 !important;
+          padding-top: 0 !important;
+          width: 300px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .list-layout-attributes-container .vte-product-buy_now {
+          padding-top: 15px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .list-layout-attributes-container .vte-product-attribute .attribute-container,
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c .stacked-list-layout-attributes-container .vte-product-attribute .attribute-container {
+          width: 100% !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-name {
+          height: px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-name .attribute-container {
+          width: px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-name a {
+          font-size: 12px !important;
+          line-height: 18px !important;
+          letter-spacing: 0em !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-buy_now {
+          height: px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-buy_now .attribute-container {
+          width: px !important;
+        }
+        #widget_f7ad974c8f2e1928c172ceaa65035f8c td.vte-product-buy_now a {
+          font-size: 12px !important;
+          line-height: 18px !important;
+          letter-spacing: 0em !important;
+        }
+        #widget_acff8555f7de156b3ecbe307252e1cc8 td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_2a81e1ebcb10875d93180f4821b447c9 .block-content td {
+          font-size: 30px !important;
+          line-height: 32px !important;
+          letter-spacing: 0em !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .grid-widget-container {
+          padding-left: 5px !important;
+          padding-right: 5px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .grid-widget-container .mobile-full {
+          width: 100% !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .grid-widget-container .mobile-full .block-content {
+          width: 50% !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .grid-widget-container .mobile-half {
+          width: 50% !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .grid-widget-container .mobile-half .block-content {
+          width: 100% !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .attribute-left-padding {
+          width: 0px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf .attribute-right-padding {
+          width: 0px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-name {
+          height: 40px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-name .attribute-container {
+          width: 134px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-name a {
+          font-size: 13px !important;
+          line-height: 15px !important;
+          letter-spacing: 0em !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-buy_now {
+          height: px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-buy_now .attribute-container {
+          width: px !important;
+        }
+        #widget_ca0259408cb138a0a0feb16e983858cf td.vte-product-buy_now a {
+          font-size: 12px !important;
+          line-height: 18px !important;
+          letter-spacing: 0em !important;
+        }
+        #widget_26657193db815d4e9dc68e83456181db td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_119173b01dbe9d2e9adeebc189b57bbb .block-content .image-widget-content {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_119173b01dbe9d2e9adeebc189b57bbb .block-content .image-widget-content .mobile-width {
+          width: 320px !important;
+        }
+        #widget_13d5a7b1a6b8b787659e11456c30cd0f .block-content td {
+          font-size: 12px !important;
+          line-height: 14px !important;
+          letter-spacing: 0.0em !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_0c499b2161a85902283769d92976bf51 .text-button-content td a {
+          font-size: 14px !important;
+          line-height: 16px !important;
+          letter-spacing: 0em !important;
+        }
+        #widget_0c499b2161a85902283769d92976bf51 .button-container {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_38a9719a6695e629f2218ed3be99ce16 td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_8eea12d4b2c5113709ee42f17d6fbc65 .block-content td {
+          font-size: 16px !important;
+          line-height: 18px !important;
+          letter-spacing: 0.0em !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_e36459d6d8e543068d5be2e09f431f94 td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_755ebe1597c7101aa76cd6f323aeefd1 .block-content td {
+          font-size: 12px !important;
+          line-height: 14px !important;
+          letter-spacing: 0.0em !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_ff01f57148e0800dd2a9b53bcacdc889 td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        #widget_093d152c2818a750cf960c3bfd2d3575 .block-content .image-widget-content {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        #widget_093d152c2818a750cf960c3bfd2d3575 .block-content .image-widget-content .mobile-width {
+          width: 193px !important;
+        }
+        #widget_df355372b5143e905007985fe7ad6d34 .block-content td {
+          font-size: 12px !important;
+          line-height: 30px !important;
+          letter-spacing: 0em !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        #widget_9a1d5f7b24ce76d8fe2546df5420e381 .block-content td {
+          font-size: 10px !important;
+          line-height: 12px !important;
+          letter-spacing: 0.0em !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        #widget_dd5fc196ca0b307c3d101b6ebb2e22e3 .block-content td {
+          font-size: 10px !important;
+          line-height: 14px !important;
+          letter-spacing: 0em !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        /* ========== end custom styles =========== */
+      }
+    </style>
+    <style type="text/css" media="only screen and (max-width: 481px)">
+      @media screen and (max-width: 481px) {
+        .md-fluid-row .col-1,
+        .md-fluid-row .col-2,
+        .md-fluid-row .col-3,
+        .md-fluid-row .col-4,
+        .md-fluid-row .col-5,
+        .md-fluid-row .col-6,
+        .md-fluid-row .col-7,
+        .md-fluid-row .col-8,
+        .md-fluid-row .col-9,
+        .md-fluid-row .col-10,
+        .md-fluid-row .col-11 {
+          width: 100% !important;
+        }
+      }
+    </style>
+
+    <!-- end responsive styles -->
+  </head>
+  <body style="margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%">
+    <table id="wrapper-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin:0; padding:0">
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+          <table id="content-table" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+
+            <!-- patch for gmail app -->
+
+            <!-- [if !mso] >
+<!-- >
+          <tr class="mobile-hide">
+            <td>
+              <img alt="" width="600" height="1" border="0" style="display:block;min-height:1px;max-height:1px;width:600px;min-width:600px;" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" />
+            </td>
+          </tr>
+          <div class="mobile-hide" style="white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+
+          <!-- [endif] -->
+
+            <!-- end patch for gmail app fix -->
+            <tr>
+              <td id="content-cell" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+
+                <!-- text -->
+                <table bgcolor="#004B75" class="row" id="widget_ee424a7a0225eb2cc2bb5911a0caa22e" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664lw6683546105348096" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                  <tr>
+                    <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+                      <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                              <tr>
+                                <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:10px; line-height:14px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:20px">
+                                  <p style="margin:0 !important; color:#ffffff" align="right"><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;">Hurry before they're gone.&#160;&#160; |&#160; &#160;<a style="text-decoration:inherit !important; color:#ffffff" href="#" target="_blank" rel="noopener">View Online</a> &#187;</span></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+ <!-- end text -->
+
+                <!-- global widget layout -->
+
+                <!-- begin spacer -->
+                <table class="row-spacer" bgcolor="#ffffff" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                  <tr>
+                    <td height="20" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                  </tr>
+                </table>
+ <!-- end spacer --><span widget-type="code_block" link-context-id="t4567523898097664gw4802993081810944lw6497222229229568">
+ <!-- navigation --> <table class="row" bgcolor="#ffffff" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <tr> <td height="0" bgcolor="#ffffff" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#ffffff; line-height:1px; font-size:1px">&#160;</td> </tr> <tr> <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <table class="col-6" width="180" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px"> <tr> <td id="vte-nav-widget-image-container" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-right:0px; padding-bottom:0px; padding-left:20px" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h1/GcazfpXm0ChdRbe3O4allBbGEei-2B5lfyuK98UrSQbi4Mm-2BYyihf8t7XPzMOCdLIOSoKv6TRa0TGXRLMCY0366vEqVMg33ArP31JD31WQkOoPf7lBjpStZWa-2B0aju8aflUoNPn-2Fc6v2A-2B8ql2WAiripAqeu5PE3rddNtlexIVERpmqJ9idBwpMTvmpvcgAzJ-2FZ-2BvUz-2F35ily5Lzo9d-2B0OEH9NiMj0N8fY-2FO5yH5LKMAGhB7gIyer4lgP-2FL80IN2JnDPtxMGKqBLy34objOUQ3jC25y2OTLK-2BbAq1buqj9TPD5QqaPgCdhIGYwAzV32pb1w130wK8glSYqzNGGXrGSthVST1IU0cmBFIVKVnA09w-2FRn8YntkR65JcCyWi4o9KK/aHLC" target="_blank"> <img width="160" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/logo.png" alt="Columbia" align="center" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td> </tr> </table> <table class="col-6" width="416" align="right" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px"> <tr> <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <table id="navigation" width="416" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <tr> <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:15px"> <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"> <tr> <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-transform:none; text-align:center; letter-spacing:0em; line-height:15px; background-color:#ffffff" width="80" valign="middle" bgcolor="#ffffff"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h2/GcazfpXm0ChdRbe3O4allNdmNPuse39o0jJh64PjR4znx-2BBERncb9HegZYBUJiGrBgm7ithAvm9nmDVs-2F8LiPGYBn5FXPJz8klwqpzGRlg88Trro8CJ6srtCACZ8Al0OiIrl4d8-2FAVgBaTWGA72F2DeSOU8rqMsj3S9XUzmBQYb1Jtn4zwtLd6BQCi229xtahA7ZSdoROR-2FKJMxlijvowkEXz7MbsuBy4oyOHSPH1YwMzibuCW3Hj3ng3Z9N-2B5WSnBZLhGpIR310wq2BjcgLkYuCioJAQeQRJVIksu4S-2FN8PL6p45foTrZxqol2hwnjDVdJZR5XErNNycmBrrqGKHnylFWPFUjceHiNyEcw40fp5kBi-2Br15gC6C22mOCiZMudlknkwLqv1VtnCqElIv5rQ-3D-3D/IBlF" target="_blank" style="color:#010101; text-decoration: none;"> <span style="color: #010101;">Men</span> </a>
+              </td>
+              <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-transform:none; text-align:center; letter-spacing:0em; line-height:15px; background-color:#ffffff" width="80" valign="middle" bgcolor="#ffffff"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h3/GcazfpXm0ChdRbe3O4allHCklhAZhgigJJgqobgyrppOqchHb9JjbUkDu7F6NKbzI62Gj-2Fi0Ebhhw8s-2BB6wENfKE34dCP-2FONjauVs2H-2B9e7NglPiu2MZdn6qH1xxIBQWp9lR1vmCDLrnd7IH3MIAhrjuygrO86pHYijPAhN-2F7M92xIZ2JBpIJe5YI0tZp1Y-2FfIK3oTsddrJAFMtIh8Pyk3byXt-2FciXWW4A04yMbLfWAxWfY64FlSKR6stnO3X8LDk8-2FNAUfX8fu86VyplrAkxDIRbpAa8cGTs3HRZWQ2gKhaGTNRGiwyzrpxEo-2Fy7-2BL330oHfvXZyzp9yTyGpx8ZPYLtclt7Z1xonzW5juClaFvclXNBi0PX0IIO2M4hDrnHJ0SlHcF-2Br4ZFOwmMVY1IJA-3D-3D/iv0Q" target="_blank" style="color:#010101; text-decoration: none;"> <span style="color: #010101;">Women</span> </a> </td>
+              <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-transform:none; text-align:center; letter-spacing:0em; line-height:15px; background-color:#ffffff" width="80" valign="middle" bgcolor="#ffffff"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h4/GcazfpXm0ChdRbe3O4allFm6ITcHNqv-2FtL3NNLcxVtzAu5IjkPC5-2FgT1GSDidaBhbhaLUNe7KKvjrb2NpLcw8km4GCEyKn580y8e5ls6Cxs88IVkBaOrPRB7gyz41YuH9-2B-2FnsrG-2FOC-2FwTn-2B05fXTxzSqDw87hSNvKLCMKyEIZs9UUx7z0BvhahxTN3vfapUGa6oNAqUFRFSznK2rAa5X9AlGAk-2B-2F3yr8-2B4zCMGyaQEa1H-2FecaEkFaoGQMmz6q6JZo9POlTcee-2FPsF8OcK0rLitZjXewU-2BswxMLyNKJzyH4O5AQeLFngSAf0T0SWKusq8SfP-2FhYp1k3rLRda8F1YT6YCgX9e53yOys0z19W8xhPY6lyji6-2FMlHbYpnWcxQfKobL5X2pFefKpGha2-2BWiG7Hw-3D-3D/xHeG" target="_blank" style="color:#000001; text-decoration: none;"> <span style="color: #000001;">Kids</span> </a> </td>
+              <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-transform:none; text-align:center; letter-spacing:0em; line-height:15px; background-color:#ffffff" width="80" valign="middle" bgcolor="#ffffff"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h5/GcazfpXm0ChdRbe3O4allOZkzyFK1WCBnsauHLWEUJ3jPDbQpIYJMgipkPooUXddPK2GO-2FuIEy03s5Egv705nd-2FzUkBxCk-2B-2F7CPveD6tL9qoPFtAz3AUU1vsnKuMlpa5fydU5T8JhunyXnYqNSPPgPT3dxBc4b1Vg52IXW6PjuUKLQlo115YbLVF0h8m9JVSMS4-2BVk7JsACRvFHyf8x09-2F-2ByE7xPUALXIpm9odxxI-2FkDNsfJhplbMdFb8WhgY6HoJvToR9zGnIpMVWiajq1Un8tu5mqduqRoAQoPGdT-2FlmofXskN0tfHagHWklTow5-2BRcRfBddo97Ra4OQnjoZFn2rxoP0wxrpoyLd8OucBG9z3vPYdXmBVjMNY1dVhA-2BzWzbaPZUoHegkiTDYrBYCixXw-3D-3D/Piwn" target="_blank" style="color:#000001; text-decoration: none;"> <span style="color: #000001;">Footwear</span> </a> </td>
+              <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-transform:none; text-align:center; letter-spacing:0em; line-height:15px; background-color:#ffffff" width="80" valign="middle" bgcolor="#ffffff"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h6/GcazfpXm0ChdRbe3O4allLZvnBfgzLmHIPLHMbJFB9WUG2vhjf8sPOnuuVXw0roPW6YNwN-2Fr7-2FzXvvopmjlUaHUMIoPulM9e9xFij9Fh7nee1LrYU8ULB0QEcLT542zTHRMoM8bVV2H6MX7Y0YDQRJySInql9qAhsRbZDO4EpRQ3svHuA4HzMynvgpgvUo5e0zeYyfI7h4i96UODKVThJi3DKgJNW8n7Wt4GQux0K1BmRgH8foHvLbZYq04hXhKx5FhVhTPdHC090rxC2QHQTVZwPzzKRchIvlmUU-2Fe9RoqlwsNZ88a2azCjlyIuXAXBDnK64CdHBoT-2F-2FTXZQIOWuvHHRqQc2LU1P7G8w59MidE2kB4MPyxv9r7T2W2XAJDaod3z3PJkP7qxt3FyXzi6fw-3D-3D/X8sI" target="_blank" style="color:#000001; text-decoration: none;"> <span style="color: #000001;">Sale</span> </a> </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+      <td height="20" bgcolor="#ffffff" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#ffffff; line-height:1px; font-size:1px">&#160;</td>
+    </tr>
+    </table>
+ <!-- end navigation --> </span>
+<!-- end global widget layout -->
+
+    <!-- begin divider -->
+    <table class="row-spacer" bgcolor="#ffffff" id="widget_90886dc8dab7f3c8d8c9707ecbdd999f" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-bottom:1px solid #ebebeb; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- image -->
+    <table class="row" bgcolor="#ffffff" id="widget_a60cb1aa3fd4652ae5c89983553004d7" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664lw6158711461707776" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" class="image-widget-content" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px; line-height:1px; font-size:1px"> <img class="mobile-hide" width="600" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/Price_Hero_LaborDay_V2_Oct18.jpg" alt="Great News!" border="0" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; font-size:initial" height="auto">
+ <!-- [if !mso]><! -->
+                      <div class="desktop-hide" style="display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                          <tr>
+                            <td align="center" class="desktop-hide" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; mso-hide:all; line-height:1px; font-size:1px"> <img class="flex-image" width="0" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/Price_Hero_LaborDay_V2_Oct18.jpg" alt="Great News!" border="0" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0; font-size:initial" height="auto"> </td>
+                          </tr>
+                        </table>
+                      </div>
+ <!-- <![endif] -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end image -->
+
+    <!-- list layout -->
+    <table bgcolor="#ffffff" class="row" id="widget_f7ad974c8f2e1928c172ceaa65035f8c" widget-type="dynamic_product_block" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664lw5962824982659072" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px" class="list-layout-container">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="col-4" width="190" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+                  <tr>
+                    <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                        <tr>
+                          <td class="mobile-hide" width="70" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">&#160;</td>
+                          <td align="center" valign="middle" class="vte-product-image" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h7/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2dLogStMDW5P5lFklSoF-2F66R9QPmBydgftmeiBdS48gajLXXK0VJVxASXoQxgkI3Y-2F7Byfu1k7cDOeAJz9oRJ1IaRINYN5OzBOD3Cb6svEHO5zZEr00VbZ5PgvSjkB-2BZQSHQI-2BWWSTURDiEawNotQEDs1pGToQ7m-2F8QxE2rSa65L3wT6YLGu-2FL8oGu5E553eu3wM3YK36yVHcGXQu0Ibafn-2BsPVwOa8LVqARxm-2FqA10S14N7XVaP8pjQLBPMSN8z4QAcP61Bs7uyp0E7SvX7rqhVnpVK8BIFQPq9dH1mqN-2FCcye41oYaRVrgiqWP8eYusK59u4ANPT5Jmk-2FT2Rwzhm2uwfAb3qUya5qJs9WK8v-2BqvKL7Lhjt06kdPZDwaYUoyrCzbuLxM1nSnFSlUzC2Xug4wflNAv58YHuC42VAFMSzmNK2CYct3ud-2FWMwRj6JzyLTiG7sXfdWm-2B5qgIMIys26/w989" target="_blank"> <img class="flex-image" width="120" alt="Men's Silver Ridge&#8482; 2.0 Plaid Long Sleeve Shirt" src="https://bluecore.com/api/rest/smart_image_resize?url_safe_b64_image_url=aHR0cHM6Ly9jb2x1bWJpYS5zY2VuZTcuY29tL2lzL2ltYWdlL0NvbHVtYmlhU3BvcnRzd2VhcjIvMTgzODkxMV83OTVfZg==&amp;width=120&amp;height=120&amp;color=white" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="col-8" width="406" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+                  <tr>
+                    <td class="stacked-list-layout-attributes-container" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-left:0px">
+                      <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                        <tr>
+                          <td height="39" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="vte-product-attribute vte-product-name" height="36" valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table class="attribute-container" align="center" width="290" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                              <tr>
+                                <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:18px; letter-spacing:0em" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h8/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2dLogStMDW5P5lFklSoF-2F66R9QPmBydgftmeiBdS48gajLXXK0VJVxASXoQxgkI3Y-2F7Byfu1k7cDOeAJz9oRJ1IaRINYN5OzBOD3Cb6svEHO5zZEr00VbZ5PgvSjkB-2BZQSHQI-2BWWSTURDiEawNotQEDs1pGToQ7m-2F8QxE2rSa65L3wT6YLGu-2FL8oGu5E553eu3wM3YK36yVHcGXQu0Ibafn-2BsPVwOa8LVqARxm-2FqA10S14N7XVaP8pjQLBPMSN8z4QAcP61Bs7uyp0E7SvX7rqhVnpVK8BIFQPq9dH1mqN-2FCcye41oYaRVrgiqWP8eYusK59u4ANPT5Jmk-2FT2Rwzhm2uwfAb3qUya5qJs9WK8v-2BqvKL7Lhjt06kdPZDwaYUoyrCzbuLxM1nSnFSlUzC2Xug4wflNAv58YHuC42VAFMSzmNK2CYct3ud-2FWMwRj6JzyLTiG7sXfdWm-2B5qgIMIys26/y19O" target="_blank" style="color: #004b75; text-align: center; text-decoration: none;"> Men's Silver Ridge&#8482; 2.0 Plaid Long Sleeve Shirt </a> </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="vte-product-attribute vte-product-buy_now" height valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                              <tr>
+                                <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; font-weight:bold; line-height:18px; letter-spacing:0em; text-transform:none; padding-left:33px; padding-right:33px; padding-top:10px; padding-bottom:10px; border:2px solid #004b75; border-radius:2px" bgcolor="#ffffff" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h9/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2dLogStMDW5P5lFklSoF-2F66R9QPmBydgftmeiBdS48gajLXXK0VJVxASXoQxgkI3Y-2F7Byfu1k7cDOeAJz9oRJ1IaRINYN5OzBOD3Cb6svEHO5zZEr00VbZ5PgvSjkB-2BZQSHQI-2BWWSTURDiEawNotQEDs1pGToQ7m-2F8QxE2rSa65L3wT6YLGu-2FL8oGu5E553eu3wM3YK36yVHcGXQu0Ibafn-2BsPVwOa8LVqARxm-2FqA10S14N7XVaP8pjQLBPMSN8z4QAcP61Bs7uyp0E7SvX7rqhVnpVK8BIFQPq9dH1mqN-2FCcye41oYaRVrgiqWP8eYusK59u4ANPT5Jmk-2FT2Rwzhm2uwfAb3qUya5qJs9WK8v-2BqvKL7Lhjt06kdPZDwaYUoyrCzbuLxM1nSnFSlUzC2Xug4wflNAv58YHuC42VAFMSzmNK2CYct3ud-2FWMwRj6JzyLTiG7sXfdWm-2B5qgIMIys26/C2Gq" target="_blank" style="text-decoration: none; color: #004b75;"> REVEAL NEW PRICE </a> </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="2.5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end list layout -->
+
+    <!-- begin divider -->
+    <table class="row-spacer" bgcolor="#ffffff" id="widget_acff8555f7de156b3ecbe307252e1cc8" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-bottom:2px solid #ebebeb; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- text -->
+    <table bgcolor="#ffffff" class="row" id="widget_2a81e1ebcb10875d93180f4821b447c9" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664lw6334993940021248" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:34px; line-height:36px; letter-spacing:0em; text-transform:uppercase; padding-left:0px; padding-right:0px">
+                      <p style="margin:0 !important"><span style="color: #004b75;"><strong><span style="font-family: Arial, Helvetica, sans-serif;">YOU MAY ALSO&#160;LIKE</span></strong></span></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- grid layout -->
+    <table bgcolor="#ffffff" class="fluid-row" id="widget_ca0259408cb138a0a0feb16e983858cf" widget-type="dynamic_product_block" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664lw6008568775114752" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td class="grid-widget-container" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+          <table class="col-3 mobile-half" width="148" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="row" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                  <tr>
+                    <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+                    <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                        <tr>
+                          <td align="center" valign="top" class="vte-product-image" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table class="row" width="130" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                              <tr>
+                                <td width="130" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h10/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2e-2Bwl9des8hYSWZ1YiW-2Bmfl5T6xTbbjqnB6SEF1bhTGcuoZU-2B4JNzsG05-2FqMMerCPPUwCnJFsE5KyR0IK8mbIsFS5soYykv1gRM1WKu-2BFudL7Ij7QwIm0SNlzSlr34s1vkCY8U6cWSMggqEl56H41bo1AiCyFamX5NMqK-2B8bznsTsaWaYWQGh4w3-2BUN2Bkhh73ShfeszvYnl-2FINbbTqI8Iam3AovQ7vSwngQQ880RUK89C3iqNGYPlPfLeHvg-2BybRZlYf51gXre7qdKuZcvyf3zAWQns2PHOOuvVa0Jp53CIwjjv635VHjETfn9uN9Oibom-2B6Jr4r6mlEWpMz7TTdkPyboUBCdNgR-2F-2BEYbB7ur3Oh4OSj5k1LfZ3RPT-2F4pZ279vaqUDQ3WuspmECEQvObRnUP-2FbcOiqW6dSQ6JpD6YayfqEasR24a5R91B-2B6F5kw-2Bt7HDLD58x2WEnVFdmlTIT3/Bhzy" target="_blank"> <img class="flex-image" width="130" alt="Men's Silver Ridge&#8482; 2.0 Flannel Shirt" src="https://bluecore.com/api/rest/smart_image_resize?url_safe_b64_image_url=aHR0cHM6Ly9jb2x1bWJpYS5zY2VuZTcuY29tL2lzL2ltYWdlL0NvbHVtYmlhU3BvcnRzd2VhcjIvMTg2MjA2MV80MjVfZg==&amp;width=130&amp;height=130&amp;color=white" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="vte-product-name" height="55" valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table class="attribute-container" align="center" width="134" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                              <tr>
+                                <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:13px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:15px; letter-spacing:0em" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h11/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2e-2Bwl9des8hYSWZ1YiW-2Bmfl5T6xTbbjqnB6SEF1bhTGcuoZU-2B4JNzsG05-2FqMMerCPPUwCnJFsE5KyR0IK8mbIsFS5soYykv1gRM1WKu-2BFudL7Ij7QwIm0SNlzSlr34s1vkCY8U6cWSMggqEl56H41bo1AiCyFamX5NMqK-2B8bznsTsaWaYWQGh4w3-2BUN2Bkhh73ShfeszvYnl-2FINbbTqI8Iam3AovQ7vSwngQQ880RUK89C3iqNGYPlPfLeHvg-2BybRZlYf51gXre7qdKuZcvyf3zAWQns2PHOOuvVa0Jp53CIwjjv635VHjETfn9uN9Oibom-2B6Jr4r6mlEWpMz7TTdkPyboUBCdNgR-2F-2BEYbB7ur3Oh4OSj5k1LfZ3RPT-2F4pZ279vaqUDQ3WuspmECEQvObRnUP-2FbcOiqW6dSQ6JpD6YayfqEasR24a5R91B-2B6F5kw-2Bt7HDLD58x2WEnVFdmlTIT3/ZL6q" target="_blank" style="color: #004B75; text-align: center; text-decoration: none;"> Men's Silver Ridge&#8482; 2.0 </a> </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="vte-product-buy_now" height valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                            <table align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                              <tr>
+                                <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:18px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:0px; padding-top:0px; padding-bottom:0px; border-radius:0px" bgcolor="#595959" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h12/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2e-2Bwl9des8hYSWZ1YiW-2Bmfl5T6xTbbjqnB6SEF1bhTGcuoZU-2B4JNzsG05-2FqMMerCPPUwCnJFsE5KyR0IK8mbIsFS5soYykv1gRM1WKu-2BFudL7Ij7QwIm0SNlzSlr34s1vkCY8U6cWSMggqEl56H41bo1AiCyFamX5NMqK-2B8bznsTsaWaYWQGh4w3-2BUN2Bkhh73ShfeszvYnl-2FINbbTqI8Iam3AovQ7vSwngQQ880RUK89C3iqNGYPlPfLeHvg-2BybRZlYf51gXre7qdKuZcvyf3zAWQns2PHOOuvVa0Jp53CIwjjv635VHjETfn9uN9Oibom-2B6Jr4r6mlEWpMz7TTdkPyboUBCdNgR-2F-2BEYbB7ur3Oh4OSj5k1LfZ3RPT-2F4pZ279vaqUDQ3WuspmECEQvObRnUP-2FbcOiqW6dSQ6JpD6YayfqEasR24a5R91B-2B6F5kw-2Bt7HDLD58x2WEnVFdmlTIT3/XKka" target="_blank" style="text-decoration: none; color: #FFFFFF;">
+                              <tr>
+                                <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h13/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2e-2Bwl9des8hYSWZ1YiW-2Bmfl5T6xTbbjqnB6SEF1bhTGcuoZU-2B4JNzsG05-2FqMMerCPPUwCnJFsE5KyR0IK8mbIsFS5soYykv1gRM1WKu-2BFudL7Ij7QwIm0SNlzSlr34s1vkCY8U6cWSMggqEl56H41bo1AiCyFamX5NMqK-2B8bznsTsaWaYWQGh4w3-2BUN2Bkhh73ShfeszvYnl-2FINbbTqI8Iam3AovQ7vSwngQQ880RUK89C3iqNGYPlPfLeHvg-2BybRZlYf51gXre7qdKuZcvyf3zAWQns2PHOOuvVa0Jp53CIwjjv635VHjETfn9uN9Oibom-2B6Jr4r6mlEWpMz7TTdkPyboUBCdNgR-2F-2BEYbB7ur3Oh4OSj5k1LfZ3RPT-2F4pZ279vaqUDQ3WuspmECEQvObRnUP-2FbcOiqW6dSQ6JpD6YayfqEasR24a5R91B-2B6F5kw-2Bt7HDLD58x2WEnVFdmlTIT3/_OGz" target="_blank" style="text-decoration: none; color: #FF0000;font-size:15px;">$48.75</a> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h14/GcazfpXm0ChdRbe3O4allPDy4NKz-2FC2dEipytqWuL2e-2Bwl9des8hYSWZ1YiW-2Bmfl5T6xTbbjqnB6SEF1bhTGcuoZU-2B4JNzsG05-2FqMMerCPPUwCnJFsE5KyR0IK8mbIsFS5soYykv1gRM1WKu-2BFudL7Ij7QwIm0SNlzSlr34s1vkCY8U6cWSMggqEl56H41bo1AiCyFamX5NMqK-2B8bznsTsaWaYWQGh4w3-2BUN2Bkhh73ShfeszvYnl-2FINbbTqI8Iam3AovQ7vSwngQQ880RUK89C3iqNGYPlPfLeHvg-2BybRZlYf51gXre7qdKuZcvyf3zAWQns2PHOOuvVa0Jp53CIwjjv635VHjETfn9uN9Oibom-2B6Jr4r6mlEWpMz7TTdkPyboUBCdNgR-2F-2BEYbB7ur3Oh4OSj5k1LfZ3RPT-2F4pZ279vaqUDQ3WuspmECEQvObRnUP-2FbcOiqW6dSQ6JpD6YayfqEasR24a5R91B-2B6F5kw-2Bt7HDLD58x2WEnVFdmlTIT3/7CT6" target="_blank" style="color: #004B75; text-decoration: none;font-size:15px;"> <span style="text-decoration: line-through;">$65.00</span> </a> </td>
+                              </tr> </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+    <table class="col-3 mobile-half" width="148" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+          <table class="row" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="vte-product-image" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="row" width="130" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td width="130" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h15/GcazfpXm0ChdRbe3O4allOQD9I0mYio82-2FNEoV-2B0uYID-2FIJCO3Q4z2NO8mSx4yecRO4EppQGph9m8Vn6p-2FSN7UR5FIXbWbVjZVEJTOYlHcXcnqgcn1u6Hogkgz-2BD-2Be79uzu4JFsVDKZTSVNFbI2NXkBXeb-2BBmRCvlfogU-2FiAYkSqPSojJFC1QQpeWeBN9kAvs0yTt90wFi-2FOvQOVBQdD5SrWXFWNuRLP6YKXH1OTU3bv61of6lLCtaOj3gkBKyA82HvmzG0u39-2BtiA0IQqLt65GPG9BSKGqQBZTpceqUnez3kpr1RRFrxOUZZ3CtW5AY95cd2yiYtA8FYl8QYwANknWenw0kskmIuKs-2BWnC5SBpqQalhUGKFb32gsYFD3FOs4ERZeIZPODNQiUtpWy-2BfQoFWIJKUUnfmAggOiEFcIeuPUJ1uZjw65U1FdidtdE-2BWv3OY6e8vmsphVqO0hbVd8nDXVbsrJbjSsn7cRqY5BRzmjJWScX3N9ckKK8lpZKSW/J7ND" target="_blank"> <img class="flex-image" width="130" alt="Men&#8217;s Rapid Rivers&#8482; II Long Sleeve Shirt" src="https://bluecore.com/api/rest/smart_image_resize?url_safe_b64_image_url=aHR0cHM6Ly9jb2x1bWJpYS5zY2VuZTcuY29tL2lzL2ltYWdlL0NvbHVtYmlhU3BvcnRzd2VhcjIvMTU1MjA1MV80NjVfZg==&amp;width=130&amp;height=130&amp;color=white" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-name" height="55" valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="attribute-container" align="center" width="134" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:13px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:15px; letter-spacing:0em" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h16/GcazfpXm0ChdRbe3O4allOQD9I0mYio82-2FNEoV-2B0uYID-2FIJCO3Q4z2NO8mSx4yecRO4EppQGph9m8Vn6p-2FSN7UR5FIXbWbVjZVEJTOYlHcXcnqgcn1u6Hogkgz-2BD-2Be79uzu4JFsVDKZTSVNFbI2NXkBXeb-2BBmRCvlfogU-2FiAYkSqPSojJFC1QQpeWeBN9kAvs0yTt90wFi-2FOvQOVBQdD5SrWXFWNuRLP6YKXH1OTU3bv61of6lLCtaOj3gkBKyA82HvmzG0u39-2BtiA0IQqLt65GPG9BSKGqQBZTpceqUnez3kpr1RRFrxOUZZ3CtW5AY95cd2yiYtA8FYl8QYwANknWenw0kskmIuKs-2BWnC5SBpqQalhUGKFb32gsYFD3FOs4ERZeIZPODNQiUtpWy-2BfQoFWIJKUUnfmAggOiEFcIeuPUJ1uZjw65U1FdidtdE-2BWv3OY6e8vmsphVqO0hbVd8nDXVbsrJbjSsn7cRqY5BRzmjJWScX3N9ckKK8lpZKSW/K4l0" target="_blank" style="color: #004B75; text-align: center; text-decoration: none;"> Men&#8217;s Rapid Rivers&#8482; II Long </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-buy_now" height valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:18px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:0px; padding-top:0px; padding-bottom:0px; border-radius:0px" bgcolor="#595959" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h17/GcazfpXm0ChdRbe3O4allOQD9I0mYio82-2FNEoV-2B0uYID-2FIJCO3Q4z2NO8mSx4yecRO4EppQGph9m8Vn6p-2FSN7UR5FIXbWbVjZVEJTOYlHcXcnqgcn1u6Hogkgz-2BD-2Be79uzu4JFsVDKZTSVNFbI2NXkBXeb-2BBmRCvlfogU-2FiAYkSqPSojJFC1QQpeWeBN9kAvs0yTt90wFi-2FOvQOVBQdD5SrWXFWNuRLP6YKXH1OTU3bv61of6lLCtaOj3gkBKyA82HvmzG0u39-2BtiA0IQqLt65GPG9BSKGqQBZTpceqUnez3kpr1RRFrxOUZZ3CtW5AY95cd2yiYtA8FYl8QYwANknWenw0kskmIuKs-2BWnC5SBpqQalhUGKFb32gsYFD3FOs4ERZeIZPODNQiUtpWy-2BfQoFWIJKUUnfmAggOiEFcIeuPUJ1uZjw65U1FdidtdE-2BWv3OY6e8vmsphVqO0hbVd8nDXVbsrJbjSsn7cRqY5BRzmjJWScX3N9ckKK8lpZKSW/RhCX" target="_blank" style="text-decoration: none; color: #FFFFFF;">
+                        <tr>
+                          <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h18/GcazfpXm0ChdRbe3O4allOQD9I0mYio82-2FNEoV-2B0uYID-2FIJCO3Q4z2NO8mSx4yecRO4EppQGph9m8Vn6p-2FSN7UR5FIXbWbVjZVEJTOYlHcXcnqgcn1u6Hogkgz-2BD-2Be79uzu4JFsVDKZTSVNFbI2NXkBXeb-2BBmRCvlfogU-2FiAYkSqPSojJFC1QQpeWeBN9kAvs0yTt90wFi-2FOvQOVBQdD5SrWXFWNuRLP6YKXH1OTU3bv61of6lLCtaOj3gkBKyA82HvmzG0u39-2BtiA0IQqLt65GPG9BSKGqQBZTpceqUnez3kpr1RRFrxOUZZ3CtW5AY95cd2yiYtA8FYl8QYwANknWenw0kskmIuKs-2BWnC5SBpqQalhUGKFb32gsYFD3FOs4ERZeIZPODNQiUtpWy-2BfQoFWIJKUUnfmAggOiEFcIeuPUJ1uZjw65U1FdidtdE-2BWv3OY6e8vmsphVqO0hbVd8nDXVbsrJbjSsn7cRqY5BRzmjJWScX3N9ckKK8lpZKSW/Y683" target="_blank" style="text-decoration: none; color: #FF0000;font-size:15px;">$29.99</a> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h19/GcazfpXm0ChdRbe3O4allOQD9I0mYio82-2FNEoV-2B0uYID-2FIJCO3Q4z2NO8mSx4yecRO4EppQGph9m8Vn6p-2FSN7UR5FIXbWbVjZVEJTOYlHcXcnqgcn1u6Hogkgz-2BD-2Be79uzu4JFsVDKZTSVNFbI2NXkBXeb-2BBmRCvlfogU-2FiAYkSqPSojJFC1QQpeWeBN9kAvs0yTt90wFi-2FOvQOVBQdD5SrWXFWNuRLP6YKXH1OTU3bv61of6lLCtaOj3gkBKyA82HvmzG0u39-2BtiA0IQqLt65GPG9BSKGqQBZTpceqUnez3kpr1RRFrxOUZZ3CtW5AY95cd2yiYtA8FYl8QYwANknWenw0kskmIuKs-2BWnC5SBpqQalhUGKFb32gsYFD3FOs4ERZeIZPODNQiUtpWy-2BfQoFWIJKUUnfmAggOiEFcIeuPUJ1uZjw65U1FdidtdE-2BWv3OY6e8vmsphVqO0hbVd8nDXVbsrJbjSsn7cRqY5BRzmjJWScX3N9ckKK8lpZKSW/2Mtw" target="_blank" style="color: #004B75; text-decoration: none;font-size:15px;"> <span style="text-decoration: line-through;">$34.99</span> </a> </td>
+                        </tr> </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+      <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+    </tr>
+    </table>
+    <table class="col-3 mobile-half" width="148" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+          <table class="row" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="vte-product-image" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="row" width="130" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td width="130" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h20/GcazfpXm0ChdRbe3O4allNE8Qh0nX-2FTsQ9Rj5-2B9vI2yK4ZPK-2FLtxaz-2B3Z-2FTVaVXWGbLMxx3eM7-2ByyGzlMaLudx7Fc46RjlaFAiT0AoSfEajGA0yKPK1mAyaF-2FkT60-2ByaxVhVH8Iaf80ECcd-2FDoSXKLo2kOy0Z9CW5Vsn5pfJUBifSBITBFGlsTNNY1mEvothOnFmfYKXLo23J-2FMy5tg3TjRv8hgwiitFHFgSmTLmirWEI4lRZidXnBrIxULIGb0EqyWSaBbhgbM4hVRjx6Hs4qGmr-2FtsiT-2BUAGws8hlwE7K7xNjDAzqfpuBEq2JsGvLh5ZkTU0pScAku-2Bw1uo9hsz8296ORtCadlDmwGLG-2B6XYotaRBHzkQRas2bLmSEfoXoxp-2B6sBf86ibxHuXXsKRibnBAymfIvhr4KGVAZpb2iKzudst9-2BM2bXl6X3P4EcSPwvoTL95Rt-2BxwNqK-2BkWz3Ws9IKgi8VlpzQq9fNuD7BPEQLO-2BKZ7Vb1Md9CTmWIWzw2/ZgnR" target="_blank"> <img class="flex-image" width="130" alt="Men&#8217;s Pilsner Lodge&#8482; II Long Sleeve Shirt" src="https://bluecore.com/api/rest/smart_image_resize?url_safe_b64_image_url=aHR0cHM6Ly9jb2x1bWJpYS5zY2VuZTcuY29tL2lzL2ltYWdlL0NvbHVtYmlhU3BvcnRzd2VhcjIvMTgwNDk0MV82NjRfZg==&amp;width=130&amp;height=130&amp;color=white" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-name" height="55" valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="attribute-container" align="center" width="134" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:13px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:15px; letter-spacing:0em" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h21/GcazfpXm0ChdRbe3O4allNE8Qh0nX-2FTsQ9Rj5-2B9vI2yK4ZPK-2FLtxaz-2B3Z-2FTVaVXWGbLMxx3eM7-2ByyGzlMaLudx7Fc46RjlaFAiT0AoSfEajGA0yKPK1mAyaF-2FkT60-2ByaxVhVH8Iaf80ECcd-2FDoSXKLo2kOy0Z9CW5Vsn5pfJUBifSBITBFGlsTNNY1mEvothOnFmfYKXLo23J-2FMy5tg3TjRv8hgwiitFHFgSmTLmirWEI4lRZidXnBrIxULIGb0EqyWSaBbhgbM4hVRjx6Hs4qGmr-2FtsiT-2BUAGws8hlwE7K7xNjDAzqfpuBEq2JsGvLh5ZkTU0pScAku-2Bw1uo9hsz8296ORtCadlDmwGLG-2B6XYotaRBHzkQRas2bLmSEfoXoxp-2B6sBf86ibxHuXXsKRibnBAymfIvhr4KGVAZpb2iKzudst9-2BM2bXl6X3P4EcSPwvoTL95Rt-2BxwNqK-2BkWz3Ws9IKgi8VlpzQq9fNuD7BPEQLO-2BKZ7Vb1Md9CTmWIWzw2/0Wf7" target="_blank" style="color: #004B75; text-align: center; text-decoration: none;"> Men&#8217;s Pilsner Lodge&#8482; II Long </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-buy_now" height valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:18px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:0px; padding-top:0px; padding-bottom:0px; border-radius:0px" bgcolor="#595959" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h22/GcazfpXm0ChdRbe3O4allNE8Qh0nX-2FTsQ9Rj5-2B9vI2yK4ZPK-2FLtxaz-2B3Z-2FTVaVXWGbLMxx3eM7-2ByyGzlMaLudx7Fc46RjlaFAiT0AoSfEajGA0yKPK1mAyaF-2FkT60-2ByaxVhVH8Iaf80ECcd-2FDoSXKLo2kOy0Z9CW5Vsn5pfJUBifSBITBFGlsTNNY1mEvothOnFmfYKXLo23J-2FMy5tg3TjRv8hgwiitFHFgSmTLmirWEI4lRZidXnBrIxULIGb0EqyWSaBbhgbM4hVRjx6Hs4qGmr-2FtsiT-2BUAGws8hlwE7K7xNjDAzqfpuBEq2JsGvLh5ZkTU0pScAku-2Bw1uo9hsz8296ORtCadlDmwGLG-2B6XYotaRBHzkQRas2bLmSEfoXoxp-2B6sBf86ibxHuXXsKRibnBAymfIvhr4KGVAZpb2iKzudst9-2BM2bXl6X3P4EcSPwvoTL95Rt-2BxwNqK-2BkWz3Ws9IKgi8VlpzQq9fNuD7BPEQLO-2BKZ7Vb1Md9CTmWIWzw2/OzwS" target="_blank" style="text-decoration: none; color: #FFFFFF;">
+                        <tr>
+                          <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h23/GcazfpXm0ChdRbe3O4allNE8Qh0nX-2FTsQ9Rj5-2B9vI2yK4ZPK-2FLtxaz-2B3Z-2FTVaVXWGbLMxx3eM7-2ByyGzlMaLudx7Fc46RjlaFAiT0AoSfEajGA0yKPK1mAyaF-2FkT60-2ByaxVhVH8Iaf80ECcd-2FDoSXKLo2kOy0Z9CW5Vsn5pfJUBifSBITBFGlsTNNY1mEvothOnFmfYKXLo23J-2FMy5tg3TjRv8hgwiitFHFgSmTLmirWEI4lRZidXnBrIxULIGb0EqyWSaBbhgbM4hVRjx6Hs4qGmr-2FtsiT-2BUAGws8hlwE7K7xNjDAzqfpuBEq2JsGvLh5ZkTU0pScAku-2Bw1uo9hsz8296ORtCadlDmwGLG-2B6XYotaRBHzkQRas2bLmSEfoXoxp-2B6sBf86ibxHuXXsKRibnBAymfIvhr4KGVAZpb2iKzudst9-2BM2bXl6X3P4EcSPwvoTL95Rt-2BxwNqK-2BkWz3Ws9IKgi8VlpzQq9fNuD7BPEQLO-2BKZ7Vb1Md9CTmWIWzw2/njVo" target="_blank" style="text-decoration: none; color: #FF0000;font-size:15px;">$45.00</a> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h24/GcazfpXm0ChdRbe3O4allNE8Qh0nX-2FTsQ9Rj5-2B9vI2yK4ZPK-2FLtxaz-2B3Z-2FTVaVXWGbLMxx3eM7-2ByyGzlMaLudx7Fc46RjlaFAiT0AoSfEajGA0yKPK1mAyaF-2FkT60-2ByaxVhVH8Iaf80ECcd-2FDoSXKLo2kOy0Z9CW5Vsn5pfJUBifSBITBFGlsTNNY1mEvothOnFmfYKXLo23J-2FMy5tg3TjRv8hgwiitFHFgSmTLmirWEI4lRZidXnBrIxULIGb0EqyWSaBbhgbM4hVRjx6Hs4qGmr-2FtsiT-2BUAGws8hlwE7K7xNjDAzqfpuBEq2JsGvLh5ZkTU0pScAku-2Bw1uo9hsz8296ORtCadlDmwGLG-2B6XYotaRBHzkQRas2bLmSEfoXoxp-2B6sBf86ibxHuXXsKRibnBAymfIvhr4KGVAZpb2iKzudst9-2BM2bXl6X3P4EcSPwvoTL95Rt-2BxwNqK-2BkWz3Ws9IKgi8VlpzQq9fNuD7BPEQLO-2BKZ7Vb1Md9CTmWIWzw2/3nPd" target="_blank" style="color: #004B75; text-decoration: none;font-size:15px;"> <span style="text-decoration: line-through;">$60.00</span> </a> </td>
+                        </tr> </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+      <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+    </tr>
+    </table>
+    <table class="col-3 mobile-half" width="148" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+          <table class="row" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="vte-product-image" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="row" width="130" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td width="130" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h25/GcazfpXm0ChdRbe3O4allHmCKwhA2wzRy7CcFMkaUdogxRYhRjOeEU9KupaKIP7v-2BzKy05KEKtKBXymTpHXhdacrTHIPIWkydIg9fKBACRSlCNZ0ga7fFk8FpT9G19H41ncSYx7M7cwQ1s-2B6mn4Tc9ZGtmal-2BufuV-2B5QPnGT7MGlsMKpyjdfvXXdCRLhcbs36G5iLAzFLFANmhxWXW8m2rIXC2eJJkSQxXXVosUaohV9UszzkRBVJb5MwatZ3HHXWApIN3xFRa-2BHj-2Bd-2FY3JF9Ua2aA-2Br3Pff9-2BmTSPou6zHgYzdl6E4zYK-2FI4-2BMYARwvYTJ5ij8oIZsSpbK-2F8tZXeuROqZtosVODA1H5vHGNK4zx-2FZRkmqQP9pCPKJEIxz17SIkpi7o40oq3A0e88sUyznzT1j-2FTalKv5oyfmTY4HvR-2Bg7IVi39X7LR3sb-2FAMfh6cwFqzjVZQYqd1gOUK4tnplQ0P-2F6ZSop-2BNv0Zq1A2kYCXGPTD8xEFLAXl79I-2FUouB/We3F" target="_blank"> <img class="flex-image" width="130" alt="Men&#8217;s Cornell Woods&#8482; Flannel Long Sleeve Shirt" src="https://bluecore.com/api/rest/smart_image_resize?url_safe_b64_image_url=aHR0cHM6Ly9jb2x1bWJpYS5zY2VuZTcuY29tL2lzL2ltYWdlL0NvbHVtYmlhU3BvcnRzd2VhcjIvMTYxNzk1MV83OTVfZg==&amp;width=130&amp;height=130&amp;color=white" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height="auto"> </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-name" height="55" valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table class="attribute-container" align="center" width="134" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:13px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:15px; letter-spacing:0em" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h26/GcazfpXm0ChdRbe3O4allHmCKwhA2wzRy7CcFMkaUdogxRYhRjOeEU9KupaKIP7v-2BzKy05KEKtKBXymTpHXhdacrTHIPIWkydIg9fKBACRSlCNZ0ga7fFk8FpT9G19H41ncSYx7M7cwQ1s-2B6mn4Tc9ZGtmal-2BufuV-2B5QPnGT7MGlsMKpyjdfvXXdCRLhcbs36G5iLAzFLFANmhxWXW8m2rIXC2eJJkSQxXXVosUaohV9UszzkRBVJb5MwatZ3HHXWApIN3xFRa-2BHj-2Bd-2FY3JF9Ua2aA-2Br3Pff9-2BmTSPou6zHgYzdl6E4zYK-2FI4-2BMYARwvYTJ5ij8oIZsSpbK-2F8tZXeuROqZtosVODA1H5vHGNK4zx-2FZRkmqQP9pCPKJEIxz17SIkpi7o40oq3A0e88sUyznzT1j-2FTalKv5oyfmTY4HvR-2Bg7IVi39X7LR3sb-2FAMfh6cwFqzjVZQYqd1gOUK4tnplQ0P-2F6ZSop-2BNv0Zq1A2kYCXGPTD8xEFLAXl79I-2FUouB/QDbi" target="_blank" style="color: #004B75; text-align: center; text-decoration: none;"> Men&#8217;s Cornell Woods&#8482; Flannel </a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="vte-product-buy_now" height valign="top" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                      <table align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:18px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:0px; padding-top:0px; padding-bottom:0px; border-radius:0px" bgcolor="#595959" align="center"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h27/GcazfpXm0ChdRbe3O4allHmCKwhA2wzRy7CcFMkaUdogxRYhRjOeEU9KupaKIP7v-2BzKy05KEKtKBXymTpHXhdacrTHIPIWkydIg9fKBACRSlCNZ0ga7fFk8FpT9G19H41ncSYx7M7cwQ1s-2B6mn4Tc9ZGtmal-2BufuV-2B5QPnGT7MGlsMKpyjdfvXXdCRLhcbs36G5iLAzFLFANmhxWXW8m2rIXC2eJJkSQxXXVosUaohV9UszzkRBVJb5MwatZ3HHXWApIN3xFRa-2BHj-2Bd-2FY3JF9Ua2aA-2Br3Pff9-2BmTSPou6zHgYzdl6E4zYK-2FI4-2BMYARwvYTJ5ij8oIZsSpbK-2F8tZXeuROqZtosVODA1H5vHGNK4zx-2FZRkmqQP9pCPKJEIxz17SIkpi7o40oq3A0e88sUyznzT1j-2FTalKv5oyfmTY4HvR-2Bg7IVi39X7LR3sb-2FAMfh6cwFqzjVZQYqd1gOUK4tnplQ0P-2F6ZSop-2BNv0Zq1A2kYCXGPTD8xEFLAXl79I-2FUouB/V1ch" target="_blank" style="text-decoration: none; color: #FFFFFF;">
+                        <tr>
+                          <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h28/GcazfpXm0ChdRbe3O4allHmCKwhA2wzRy7CcFMkaUdogxRYhRjOeEU9KupaKIP7v-2BzKy05KEKtKBXymTpHXhdacrTHIPIWkydIg9fKBACRSlCNZ0ga7fFk8FpT9G19H41ncSYx7M7cwQ1s-2B6mn4Tc9ZGtmal-2BufuV-2B5QPnGT7MGlsMKpyjdfvXXdCRLhcbs36G5iLAzFLFANmhxWXW8m2rIXC2eJJkSQxXXVosUaohV9UszzkRBVJb5MwatZ3HHXWApIN3xFRa-2BHj-2Bd-2FY3JF9Ua2aA-2Br3Pff9-2BmTSPou6zHgYzdl6E4zYK-2FI4-2BMYARwvYTJ5ij8oIZsSpbK-2F8tZXeuROqZtosVODA1H5vHGNK4zx-2FZRkmqQP9pCPKJEIxz17SIkpi7o40oq3A0e88sUyznzT1j-2FTalKv5oyfmTY4HvR-2Bg7IVi39X7LR3sb-2FAMfh6cwFqzjVZQYqd1gOUK4tnplQ0P-2F6ZSop-2BNv0Zq1A2kYCXGPTD8xEFLAXl79I-2FUouB/inrH" target="_blank" style="text-decoration: none; color: #004B75;font-size:15px;">$39.99 </a>
+                          </td>
+                        </tr> </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="desktop-hide" width="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all"> <img alt width="0" height="auto" border="0" src="https://storage.googleapis.com/img.triggermail.io/static/images/spacer.gif" style="display:block; border:0 none; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; max-height:0; width:0"> </td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+      <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+ <!-- end grid layout -->
+
+    <!-- begin divider -->
+    <table class="row-spacer" bgcolor="#ffffff" id="widget_26657193db815d4e9dc68e83456181db" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-bottom:1px solid #ebebeb; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- global widget layout -->
+
+    <!-- image -->
+    <table class="row" bgcolor="#ffffff" id="widget_119173b01dbe9d2e9adeebc189b57bbb" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw4623424369655808lw4899122149785600" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-bottom:0px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" class="image-widget-content" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px; line-height:1px; font-size:1px"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h29/GcazfpXm0ChdRbe3O4allE1QbGG1dY9seU9xRval0q2Mk-2Bh4jxivf2OC-2F83SBn-2BhxTapkY3eKaBJeGwtBRrS5zYJWpNd-2F97kppIPqczrlES1zjxwgN4RHAVqNhEkMw03N1OOtSOvy79ru9HpXqg9xDrOJypRfLq5gWyC-2BDxh91oql7dlwpds3rnxTDu8HB-2Bo-2BuS9hZVEHMzXsoB3uJnwhqesuM-2FbQkAUpE2bVwznkUMVJWMmoUmi3aiSOgHtPtCuvMteQlzkQS1UQ-2FUo-2FCo2Mf1-2FK-2FI6sGDZ-2BJ4Cd53-2FQEQ0lFcBnuqrSC7Fmxou0GLwfCojTeIHkeAzlLyuR5fKo2nMMF-2FZQrnkf0rnSozPQ9ZPl2d49-2BIr7M2kvolICT08S6k8urPii3zg8igxVg3hZQ-3D-3D/p5HJ" target="_blank"> <img class="mobile-hide" width="600" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/Hero_Final" alt="Shop Black Friday Sale" border="0" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; font-size:initial" height="auto"> </a>
+ <!-- [if !mso]><! -->
+                      <div class="desktop-hide" style="display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                          <tr>
+                            <td align="center" class="desktop-hide" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; mso-hide:all; line-height:1px; font-size:1px"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h30/GcazfpXm0ChdRbe3O4allE1QbGG1dY9seU9xRval0q2Mk-2Bh4jxivf2OC-2F83SBn-2BhxTapkY3eKaBJeGwtBRrS5zYJWpNd-2F97kppIPqczrlES1zjxwgN4RHAVqNhEkMw03N1OOtSOvy79ru9HpXqg9xDrOJypRfLq5gWyC-2BDxh91oql7dlwpds3rnxTDu8HB-2Bo-2BuS9hZVEHMzXsoB3uJnwhqesuM-2FbQkAUpE2bVwznkUMVJWMmoUmi3aiSOgHtPtCuvMteQlzkQS1UQ-2FUo-2FCo2Mf1-2FK-2FI6sGDZ-2BJ4Cd53-2FQEQ0lFcBnuqrSC7Fmxou0GLwfCojTeIHkeAzlLyuR5fKo2nMMF-2FZQrnkf0rnSozPQ9ZPl2d49-2BIr7M2kvolICT087IdTLgYB11wC9YhWw0-2FR0w-3D-3D/7xwt" target="_blank"> <img class="flex-image" width="0" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/Hero_Final" alt="Shop Black Friday Sale" border="0" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; max-height:0; width:0; font-size:initial" height="auto"> </a> </td>
+                          </tr>
+                        </table>
+                      </div>
+ <!-- <![endif] -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end image -->
+
+    <!-- text -->
+    <table bgcolor="#000000" class="row" id="widget_13d5a7b1a6b8b787659e11456c30cd0f" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw4623424369655808lw5905203911131136" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:5px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; line-height:14px; letter-spacing:0.0em; text-transform:none; padding-left:0px; padding-right:0px"> </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- button -->
+    <table class="row" id="widget_0c499b2161a85902283769d92976bf51" bgcolor="#000000" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw4623424369655808lw4676722200084480" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:11px; padding-bottom:20px">
+          <table class="col-12" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td class="button-container" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px">
+                <table class="text-button-content" align="center" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:initial">
+                  <tr>
+                    <td align="center" valign="middle" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px; padding-left:41px; padding-right:41px; background-color:#990000; font-size:14px; color:#ffffff; letter-spacing:0em; line-height:16px; border:1px solid #990000; border-radius:0px" bgcolor="#990000">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                        <tr>
+                          <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h31/GcazfpXm0ChdRbe3O4allE1QbGG1dY9seU9xRval0q2Mk-2Bh4jxivf2OC-2F83SBn-2BhxTapkY3eKaBJeGwtBRrS5zYJWpNd-2F97kppIPqczrlES1zjxwgN4RHAVqNhEkMw03N1OOtSOvy79ru9HpXqg9xDrOJypRfLq5gWyC-2BDxh91oql7dlwpds3rnxTDu8HB-2Bo-2BuS9hZVEHMzXsoB3uJnwhqesuM-2FbQkAUpE2bVwznkUMVJWMmoUmi3aiSOgHtPtCuvMteQlzkQS1UQ-2FUo-2FCo2Mf1-2FK-2FI6sGDZ-2BJ4Cd53-2FQEQ0lFcBnuqrSC7Fmxou0GLwfCojTeIHkeAzlLyuR5fKo2nMMF-2FZQrnkf0rnSozPQ9YwBKiabdxBhznzVBmMA3sSPDSfb3z68LU1F3wZJTK9JQ-3D-3D/XP9Q" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px;font-weight: bold;; line-height: 16px; font-family:Arial, Helvetica, sans-serif;">SEE THE DEALS</a> </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end button -->
+
+    <!-- begin spacer -->
+    <table class="row-spacer" bgcolor="#ffffff" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end spacer -->
+
+    <!-- begin divider -->
+    <table class="row-spacer" bgcolor="#ffffff" id="widget_38a9719a6695e629f2218ed3be99ce16" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-bottom:1px solid #990000; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- text -->
+    <table bgcolor="#ffffff" class="row" id="widget_8eea12d4b2c5113709ee42f17d6fbc65" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw4623424369655808lw5994321194188800" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:16px; line-height:18px; letter-spacing:0.0em; text-transform:none; padding-left:0px; padding-right:0px">
+                      <p style="margin:0 !important; text-align:center" align="center"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h32/GcazfpXm0ChdRbe3O4allE1QbGG1dY9seU9xRval0q2Mk-2Bh4jxivf2OC-2F83SBn-2BhxTapkY3eKaBJeGwtBRrS5zYJWpNd-2F97kppIPqczrlES1zjxwgN4RHAVqNhEkMw03N1OOtSOvy79ru9HpXqg9xDrOJypRfLq5gWyC-2BDxh91oql7dlwpds3rnxTDu8HB-2Bo-2BuS9hZVEHMzXsoB3uJnwhqesuM-2FbQkAUpE2bVwznkUMVJWMmoUmi3aiSOgHtPtCuvMteQlzkQS1UQ-2FUo-2FCo2Mf1-2FK-2FI6sGDZ-2BJ4Cd53-2FQEQ0lFcBnuqrSC7Fmxou0GLwfCojTeIHkeAzlLyuR5fKo2nMMF-2FZQrnkf0rnSozPQ9ZrtpKkof2-2FpnAQp7zo2ZvanBbrvBOtofXgmfOTPj0J-2BQ-3D-3D/aiLy" target="_blank" rel="noopener" style="text-decoration:inherit !important"><strong>&#160;<span style="font-family: Arial, Helvetica, sans-serif; color: #990000;">FREE SHIPPING ON ALL ORDERS*</span></strong></a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- begin divider -->
+    <table class="row-spacer" bgcolor="#ffffff" id="widget_e36459d6d8e543068d5be2e09f431f94" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-bottom:1px solid #990000; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="5" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- text -->
+    <table bgcolor="#ffffff" class="row" id="widget_755ebe1597c7101aa76cd6f323aeefd1" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw4623424369655808lw6226501321293824" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:10px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; line-height:14px; letter-spacing:0.0em; text-transform:none; padding-left:0px; padding-right:0px">
+                      <p style="margin:0 !important; text-align:center; color:#000001" align="center"><em><span style="font-family: Arial, Helvetica, sans-serif;">*See all promo details below</span></em></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- end global widget layout -->
+
+    <!-- begin spacer -->
+    <table class="row-spacer" bgcolor="#ffffff" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="10" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end spacer -->
+
+    <!-- begin spacer -->
+    <table class="row-spacer" bgcolor="#ffffff" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td height="20" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end spacer -->
+
+    <!-- global widget layout --><span widget-type="code_block" link-context-id="t4567523898097664gw6347871443156992lw5656907841994752"> <table class="row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<table class="col-4" width="198" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"><tr><td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h33/GcazfpXm0ChdRbe3O4allDyCOyBjVGscB6KZs9m5sEkzZYeLRUAAsja5Z2vz-2BgSrUukxKn0jap6da5Da3UPmgZPNZ426qBoo-2FfW1zbfElWl9xlp9nxevh8vKrFVZf7yYBqYkzDpma80QnTr2kkY0m9Wb5vFvyqkSrIlhM4O6RdVycIZxCNPs1CpsTIU2snDZfj67l5IixTlFDb-2FgJEnXpd-2BJt0gZ8iBhI79VRxuJ4NzxdXwR-2BCNVLh-2BzGhRZFNQEGALxgg2nxu2MzyDXUueVFLvnmmyxXzYGsTDHB63Bi2lmlPrqhgjSVsM3IVmAuoxIFVrIGcc3x-2BlcUdTO-2BwbJorzf-2B0DmLlR8-2Bxost0dyWV-2FSSCiEkoCcZN-2Bvk9OSIKtbN8kUDED7HOA9mbNfJ0vUYw-3D-3D/XnHH" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/gift_cards.png" width="198" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" alt="gift cards" border="0" height="auto"></a></td></tr></table></td></tr></table>
+<table class="col-4" width="198" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"><tr><td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h34/GcazfpXm0ChdRbe3O4allGCg1sfUbBPUtLoBawUyClvNj2uwCTedYlV4MWOP-2FUsSZdfLO-2F9jPNNiFPG8cFXxrKcA62clPl47HMAqEd5FEWfduubz8JsUZgtKUBwap2-2FFr3QhTnoEJZyatfqvt0fsggslsnOOKH255Uzj6exdzDCfL8MGG1Z8tqJqvilP4pVQ4TACjM6nxzBVIUkIvM83vaKEwtySE3h6f-2BlpY404-2FloVx2GjH9DWu1ArwIDE0ta3nkBPdaMiXnthGU1kOjBHupZUjeBDZoOJT82PefO-2F7nlibNBtY7I3-2B-2BEJ2syqLqGyIM-2B6DooSHw-2F5jqJOEly80qooNNe3PVIm-2FHS4zWl5hg3W1z6paY9dA8ZAPgqLMqO8ICPLnan0LVL4f4-2FMZ1k9jg-3D-3D/hy-A" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/greater_rewards.png" width="198" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" alt="greater rewards" border="0" height="auto"></a></td></tr></table></td></tr></table>
+<table class="col-4" width="198" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"><tr><td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h35/GcazfpXm0ChdRbe3O4allO3s6q66hY0YxBBTTSliDb7x-2FkpBYSTLKQtu9lkQge55m2S-2Fm9O8e4W-2FX2doBM04fwnMbPz2PKEp-2F3IGrTvj9rUE2aUXK1blxjDx5HZyuzIgQf6yJTdf6K2D9kMUnX9DSAK4zj-2BDOWctZzryacS1HWRyK3Kclgm0Zp8V9qbZI7T0qYzNiQjbhCxH-2Bfin7ZzoomLqbFG2VZinzC0pxBSRPPQ2ZskXF-2F7tdct5VRmjszwYge7XIVapbUrYCvOwSNp0x56Y2iqxHR-2F3cenXSSSm4O9vqY03mE-2BTmDmI59zTlHk1grbxTS3vscZZIhEtu6cxQKIEijLn1sua0BdNH5sXTDRiDZ9LoMr1YYxjrXPP93Fb/EAfO" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/store_locator.png" width="198" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" alt="store locator" border="0" height="auto"></a></td></tr></table></td></tr></table>
+</td></tr></table> </span>
+<!-- begin divider -->
+    <table class="row-spacer" bgcolor="#004B75" id="widget_ff01f57148e0800dd2a9b53bcacdc889" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px">
+          <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <tr>
+              <td height="1" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-top:1px solid #ffffff; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="20" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; mso-line-height-rule:exactly; line-height:1px; font-size:1px">&#160;</td>
+      </tr>
+    </table>
+ <!-- end divider -->
+
+    <!-- image -->
+    <table class="row" bgcolor="#004B75" id="widget_093d152c2818a750cf960c3bfd2d3575" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw6347871443156992lw4972580367958016" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-bottom:20px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" class="image-widget-content" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px; line-height:1px; font-size:1px"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h36/GcazfpXm0ChdRbe3O4allBbGEei-2B5lfyuK98UrSQbi4Mm-2BYyihf8t7XPzMOCdLIOSoKv6TRa0TGXRLMCY0366vEqVMg33ArP31JD31WQkOoPf7lBjpStZWa-2B0aju8aflUoNPn-2Fc6v2A-2B8ql2WAiripAqeu5PE3rddNtlexIVERpmqJ9idBwpMTvmpvcgAzJ-2FZ-2BvUz-2F35ily5Lzo9d-2B0OEH9NiMj0N8fY-2FO5yH5LKMAGhB7gIyer4lgP-2FL80IN2JnDPtxMGKqBLy34objOUQ3jC25y2OTLK-2BbAq1buqj9TPD5QqaPgCdhIGYwAzV32pb1NcXJdUBkLMG14NGj4Uu7C3q-2FSRcpJxXPIQUem-2BJdD8Ep00KppEn-2B9OuWHVo2i7GR/jnAU" target="_blank"> <img class="mobile-hide" width="193" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/footer_logo.png" alt="Columbia" border="0" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; font-size:initial" height="auto"> </a>
+ <!-- [if !mso]><! -->
+                      <div class="desktop-hide" style="display:none; padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-height:0; mso-hide:all">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                          <tr>
+                            <td align="center" class="desktop-hide" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidden; float:left; mso-hide:all; line-height:1px; font-size:1px"> <a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h37/GcazfpXm0ChdRbe3O4allBbGEei-2B5lfyuK98UrSQbi4Mm-2BYyihf8t7XPzMOCdLIOSoKv6TRa0TGXRLMCY0366vEqVMg33ArP31JD31WQkOoPf7lBjpStZWa-2B0aju8aflUoNPn-2Fc6v2A-2B8ql2WAiripAqeu5PE3rddNtlexIVERpmqJ9idBwpMTvmpvcgAzJ-2FZ-2BvUz-2F35ily5Lzo9d-2B0OEH9NiMj0N8fY-2FO5yH5LKMAGhB7gIyer4lgP-2FL80IN2JnDPtxMGKqBLy34objOUQ3jC25y2OTLK-2BbAq1buqj9TPD5QqaPgCdhIGYwAzV32pb1NcXJdUBkLMG14NGj4Uu7C3q-2FSRcpJxXPIQUem-2BJdD8FEBbAABJ4bAs-2FXnYVjO8L8/bOlG" target="_blank"> <img class="mobile-width" width="0" src="https://storage.googleapis.com/img.triggermail.io/columbia_us/footer_logo.png" alt="Columbia" border="0" style="display:block; height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; max-height:0; width:0; font-size:initial" height="auto"> </a> </td>
+                          </tr>
+                        </table>
+                      </div>
+ <!-- <![endif] -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end image -->
+
+    <!-- text -->
+    <table bgcolor="#004B75" class="row" id="widget_df355372b5143e905007985fe7ad6d34" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw6347871443156992lw5011518273028096" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; line-height:30px; letter-spacing:0em; text-transform:none; padding-left:0px; padding-right:0px">
+                      <p style="margin:0 !important; text-align:center; color:#ffffff" align="center"><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;"><a style="color:#ffffff; text-decoration:none" href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h38/GcazfpXm0ChdRbe3O4allO3s6q66hY0YxBBTTSliDb7x-2FkpBYSTLKQtu9lkQge55m2S-2Fm9O8e4W-2FX2doBM04fwnMbPz2PKEp-2F3IGrTvj9rUE2aUXK1blxjDx5HZyuzIgQf6yJTdf6K2D9kMUnX9DSAK4zj-2BDOWctZzryacS1HWRyK3Kclgm0Zp8V9qbZI7T0qYzNiQjbhCxH-2Bfin7ZzoomLqbFG2VZinzC0pxBSRPPQ2ZskXF-2F7tdct5VRmjszwYge7XIVapbUrYCvOwSNp0x56Y2iqxHR-2F3cenXSSSm4O9vqY03mE-2BTmDmI59zTlHk1grbxTS3vscZZIhEtu6cxQAsP6mJo6QN-2BOZQrLcneOvk2EC3akOytZ3isOT-2Fsc0TZG6yM-2F0ZBvC8E560Cc6A9Uw-3D-3D/Q7M_" target="_blank" rel="noopener">Store Locator</a>&#160; &#160; &#160; &#160; &#160; <a style="color:#ffffff; text-decoration:none" href="#" target="_blank" rel="noopener">My Account</a>&#160; &#160; &#160; &#160; &#160; <a style="color:#ffffff; text-decoration:none" href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h40/3U2e05qBqu4ZPaBKAausx95vm12NmBrx0QQ8h0jgVuvDofuFgizXl4jVKT3f2wVBZG2EjUzhTEBrTjY8hj-2B54HlAYLEDdcDUM6NWScUKEl2vsRdPVMq-2FHA-2BMKq-2FNe1WjK2-2BfmabubgOzBUK990pdAPqyrp5qo-2FYWhV8rKEIo3s4-2FQV2-2BW9EGAf1sBcpJnS1O29SdRTxIT-2BFbDwcgSN43UAUAeuapbW1GndN4wXTU0t-2FZK8TccjajvaBBiS9OLLvPfKzAh5WzF1r3My2u6Pw37C9fTtETkQODO7SgGo9ORF4INmTtZcnhZo-2BrtTZjgTnfspc7-2FMaoQgxYc6wIDlO-2FNYzzanAEjZuA-2F3WseU-2BdhNddYABZSyvaE4JpzL-2Fu8Bp39dJEvp-2FM-2BKTbarKGwJDDeg-3D-3D/U-6Z" target="_blank" rel="noopener">Customer Service</a>&#160; &#160; &#160; &#160; &#160; <a class="unsub-link" style="color:#ffffff; text-decoration:none" href="#" target="_blank" rel="noopener">Unsubscribe</a> &#160; &#160; &#160; &#160; <a style="color:#ffffff; text-decoration:none" href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h42/3U2e05qBqu4ZPaBKAausx95vm12NmBrx0QQ8h0jgVuvDofuFgizXl4jVKT3f2wVBZG2EjUzhTEBrTjY8hj-2B54HlAYLEDdcDUM6NWScUKEl2vsRdPVMq-2FHA-2BMKq-2FNe1WjK2-2BfmabubgOzBUK990pdAPqyrp5qo-2FYWhV8rKEIo3s4-2FQV2-2BW9EGAf1sBcpJnS1O29SdRTxIT-2BFbDwcgSN43UAUAeuapbW1GndN4wXTU0t-2FZK8TccjajvaBBiS9OLLvPfKzAh5WzF1r3My2u6Pw37C9fTtETkQODO7SgGo9ORF4INmTtZcnhZo-2BrtTZjgTnfspc7-2FMaoQgxYc6wIDlO-2FNYzzanAEjZuA-2F3WseU-2BdhNddYABZSyvaE4JpzL-2Fu8Bp3hDhAoxsasSIwiSjHmD5-2B5A-3D-3D/OqEM" target="_blank" rel="noopener">Contact Us</a></span></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- text -->
+    <table bgcolor="#004B75" class="row" id="widget_9a1d5f7b24ce76d8fe2546df5420e381" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw6347871443156992lw4592632125915136" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:5px; padding-bottom:10px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:10px; line-height:12px; letter-spacing:0.0em; text-transform:none; padding-left:10px; padding-right:10px">
+                      <p style="margin:0 !important"><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;"><strong>*Black Friday: Almost Everything On Sale + 50% Off Doorbusters </strong></span></p>
+                      <p style="margin:0 !important"><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;">25% off select items for a limited time and 50% off select doorbusters. Offer valid on the purchase of select items online at www.columbia.com or at any Columbia-owned retail store in the U.S. between 9:00 p.m. PST 11/24/2019 and 9:00 p.m. PST 12/3/2019 while supplies last. Limited stock of doorbusters on hand. Restrictions apply. Offer may not be applied to prior purchases, redeemed by store employees, or applied to gift card purchases, applicable taxes or shipping charges. Columbia reserves the right to change or cancel this offer at any time. Void where prohibited, restricted or taxed.</span></p>
+                      <p style="margin:0 !important"><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;"><strong>*Free Shipping On All Orders</strong></span><br><span style="font-family: Arial, Helvetica, sans-serif; color: #ffffff;">Free shipping only applies to standard ground shipping on eligible Columbia.com orders submitted between 9:00 p.m. PST 11/24/2019 and 9:00 p.m. PST 12/3/2019 with a single delivery address within the 48 contiguous United States. Offer is not valid on orders shipped to a P.O. Box, APO/FPO or other delivery address not served by UPS ground shipping. Select free ground shipping at checkout. Delivery time varies according to shipping address. If you choose another shipping option, additional charges may apply. Excludes gift cards. Offer is non-transferable and may not be applied to prior purchases. Customer pays applicable taxes. Columbia reserves the right to change or cancel this offer at any time.</span></p>
+                      <p style="margin:0 !important">&#160;</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text -->
+
+    <!-- text -->
+    <table bgcolor="#004B75" class="row" id="widget_dd5fc196ca0b307c3d101b6ebb2e22e3" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" link-context-id="t4567523898097664gw6347871443156992lw5704524449906688" add-link-instances="True" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+      <tr>
+        <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:0px; padding-bottom:30px">
+          <table class="col-12" width="600" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px">
+            <tr>
+              <td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                <table class="block-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center">
+                  <tr>
+                    <td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:10px; line-height:16px; letter-spacing:0em; text-transform:none; padding-left:10px; padding-right:10px">
+                      <p style="margin:0 !important; text-align:center; color:#ffffff" align="center"><span style="color: #ffffff; font-family: Arial, Helvetica, sans-serif;">This email was sent by: Columbia Sportswear Company, 14375 NW Science Park Dr., Portland, OR, 97229, USA</span></p>
+                      <p style="margin:0 !important; text-align:center; color:#ffffff" align="center">&#160;</p>
+                      <p style="margin:0 !important; text-align:center; color:#ffffff" align="center"><span style="color: #ffffff; font-family: Arial, Helvetica, sans-serif;">&#169;2019&#160;Columbia Sportswear | All rights reserved. | <a style="color:#ffffff; text-decoration:none" href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h43/GcazfpXm0ChdRbe3O4allNRVQ0IhmHzS9sC06SXffTkJJioIHx22PV7cUtwpwifqzKu0STWfoVo85queq513vpfVhX8A6Wtv0eacKb6ydlIWjnvLe7iFMyEu2klpXvrdXeWAjVq4fg8WzB06oQ4WSpMkGFmNnE9DzIJhGyLXOONZfrGAMStMobC5cgyhssAMeIWewty1zPve2MwkxHe4V3g-2FNpdCbbgn1EFb2-2BvWAlXwrFOgp6Msp-2Fre3-2FefQqLlPrDxhoR6GDIXrE95J-2B0AkOkgosTDq0JQv81G71prUoKMrMWrvIjkZf-2BMMVm4G2-2FgYLh4Wwy-2FNykqG0uEbzdMC-2BLPEAjWMv3h6gSOsf20kqd2KrsAZnePzFnEvCId47th4ySV0PhSsbobgmi3sPuvBg-3D-3D/LdUj" target="_blank" rel="noopener">Privacy Policy</a></span></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ <!-- end text --><span widget-type="code_block" link-context-id="t4567523898097664gw6347871443156992lw4592745674113024"> <table class="row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<table class="col-6" width="248" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; background-color:#004B75" bgcolor="#004B75"><tr><td style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"><tr>
+<td align="center" width="170" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#004B75; font-size:1px; line-height:1px" class="mobile-hide"></td>
+<td height="30" valign="middle" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:11px; line-height:14px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ffffff"> FOLLOW US: </td>
+</tr></table></td></tr></table>
+<table class="col-6" width="348" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; background-color:#004B75" bgcolor="#004B75"><tr><td align="center" height="30" valign="middle" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class="block-content" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center" width="100%"><tr>
+<td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h44/Nejq3qQQ6Jn1R8HM5bnp8FDD3mDf19tQHnno-2FqPQMqedvLvTDgZ-2Fy0S0j5EeEWl9kMoBRiQw86JWc-2ByTdqEvcDDhURPhErbNW6zpK4q5YW-2BTgpVNtHdX0FjGhV4FmrHjDRM4k9e85Hiq9wkwn5ctjR94F0U3-2FHsgjZDQZlZ9rDfSdRc0X-2FWvPsktcm0upEtqoF4ywtlrXitwSXCTPg8a3nOcL9NJ5-2B4V-2BQ9mvNPYXmF9skQDJY2-2B4Q826Q-2F7jdfxoK2o29sEJJI5cJLTJdmhWi2vSeoNLB3F4QPBkE15e8RIv2s4iG4I-2BRIrLYd3-2FbTU3i6IpWKRz3J7quXiUmOFl9cVY9q-2BKv9kbWzXJloZn6Sfr6FPl7qwbgGNKVo5zuOjLSv9IeuvoPIhjaRMEogqJA-3D-3D/ze84" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/facebook.png" width="28" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" border="0" alt="facebook" height="auto"></a></td>
+<td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h45/tX6tdXlLuYnKkE2jZWciQUCHQfA-2BerMF5edVbnH-2FeIKunhAiIst7xAILPEjmFvCnQrPq4mNHIfiZMlz8xRznuk5OgkdN7ZvPR1aiCt-2F8pS2ShvuTsceiPCxU4gMrj-2FbkCyKm45-2FxTOFraWCS8Ei6rMjDwJwY6jEzWGqCamgPjml0B-2BPRiU4zTwU01iMcvM92SoRqOGIT2624D1mFxUS6jj3-2FdtheGsXbRMN-2Ff-2BR6LykM-2Fnl9rMS4ow-2BvWEGX1iBiZAsxl5nrOyzZBBt8-2FmC9ks-2BYnMSDLO9IPW-2BL7PjVnuDmvY0AGIUfThyOD447Y-2BjOFOjiWWLba9b7V9eMtDO33qgbhfF8A9RAnBoyNhuJLbiHfin5FZN1e-2B2YQ2jSFmhf/MZ4N" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/twitter.png" width="28" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" border="0" alt="twitter" height="auto"></a></td>
+<td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h46/KmSwdmspjzgZvWBOGuKtq6hNAAIcXdpI8xt0VdqztDk6g0VFPDzlZTab8lqDCdk1CqMnex85jyEvJJodbBFdl8bsq6I1aPPGcir2ehfxJ1x2UlN4c7rQYhbVSJUbE0JbP-2BrId2bpilnLKmAOtxCGsXZSzey-2BPgMYzddTHkxt-2FHThe6e14F9aJT-2Bejfluh66bFKpNVweI2RdpFAXpf4WwAMGlHxv4hTd-2FBPwf456AkDVanF7DSMUUp4iwzparesDNnmYFYxNhkxQMYMBxkG5DZ2aXG47lWLlzsct1nnOOJlCbXJQGYv2zFRn3CE2b06KojGWp7VHOgM89rN3Ig6gY5IcrS-2BrkTOD3vgAKMz4m6iuONZ6a4-2FSEvXtnPxa0UZ9ZpKjdcdH62Jxs-2FtVZhcGt2Q-3D-3D/BcfZ" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/youtube.png" width="28" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" border="0" alt="youtube" height="auto"></a></td>
+<td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h47/y1M22FuAVfKYPVxXkkKlXkHMBvXUgg9b-2FY8yEf0aBETGEm7Xw5esR5YIekq0-2FVWehPk-2BB4-2FFFbMzLi6CWTeAOyng4lglcBmrQL7IKEocAYbnmKgeaMk9B84bUdQBvV-2BKdqo3InbTIvQuQTi4b-2Ffo3BtICoo6MlLLSynUQHtt3oCQg-2FpBInwWu2XHecjdjyCmQhbb-2BL9VTcKh78ucPtX5U-2FZEmP38huDcnUa0WzzB8ZDVV-2FShsM4qposoeePNTr3NODyeAcVrNA4Dr2ONGminI5mfNeRqV2M1PZdBCsgb-2F691jrTDbwI1xOZzeaEgZxC0gi-2B-2BIKoj1cUSot4ZGQJwMqxre0QLYMWUAfKeweu-2FQtkEZAq39yO2S1vM6eXwW9bqR4waF-2Bcx8NkBpQgb6N-2B9xw-3D-3D/GAW4" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/pinterest.png" width="28" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" border="0" alt="pinterest" height="auto"></a></td>
+<td align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href="http://trk.e.columbia.com/mps2/c/HAE/1h2BAA/t.2x1/LBEUQ3SxQJSPTOmjLbVejw/h48/UgaStWBIiLYn8eevue7q8M-2BqxeEIcO0HtV2ThDemQo19W51Ac5RrTjM1Cjf6bdNOFuUYu8Bq0130f9je22sxqjdDccCYcVoXN-2Fzds7IRprC5KRmBzOnS-2FMQ4iCys4ykkK3r7x48umUPmrlvWuzThqT5iYpjfwUUH53xAHYqn2MH-2FZglYV3smVmTL5WPCWO9MBCoi5-2B9mro2MELvo9XFzSgGCeFOuUzN3Hkrd5lZRzdLcT8ewVIhOS6YgC6k8CK1OhGjCZTIT0ESQYsLnuDcjabdj0oytskytOBPoiJo3j-2FvuxjwV6-2Fzkz4SIItFhAPrlKnlnSCMRt9MB7OQeh0nt435OCKMByHy36QJOdKYLwyuq6rtoMgTxHw3jKLmvJZSZV4a-2B2FQ1bQ1OPPh-2FQLzu3w-3D-3D/I0P2" target="_blank"><img src="https://storage.googleapis.com/img.triggermail.io/columbia_us/instagram.png" width="28" style="height:auto; line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; display:block" border="0" alt="instagram" height="auto"></a></td>
+<td align="center" width="180" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#004B75; font-size:1px; line-height:1px" class="mobile-hide"></td>
+</tr></table></td></tr></table>
+</td></tr></table>
+<table class="row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#004B75" bgcolor="#004B75"><tr><td align="center" height="30" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"></td></tr></table> </span>
+<!-- end global widget layout -->
+    </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+  </body>
+</html>
